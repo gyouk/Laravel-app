@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserController;
+use App\Http\Middleware\CheckLoginMiddleware;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,3 +20,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/user/{last_name}/{first_name}', [UserController::class, 'getUserInfo']);
+
+Route::get('/login', [LoginController::class, 'showLoginForm']);
+Route::post('/check-login', [CheckLoginMiddleware::class, 'check-login'])->middleware('check-login');

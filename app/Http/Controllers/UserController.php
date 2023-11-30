@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
+/**
+ * Class UserController
+ */
 class UserController extends Controller
 {
     public function getUserInfo($last_name, $first_name)

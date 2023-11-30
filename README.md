@@ -64,3 +64,11 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Tasks link
+
+1. [Параметри](http://localhost/user/name/surname) 
+2. [Вкладення](http://localhost/api/nesting/5)
+3. [Числа Фібоначчі](http://localhost/api/fibonacci/6699)
+4. [Яблука](http://localhost/api/apples/ryg/73124124)
+5. [Проста авторизація за допомогою Middleware](http://localhost/login)
